@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of allstudents">
+                <th>{{student.id}}</th>
+                <th>{{student.name}}</th>
+                <th>{{student.age}}</th>
+                <th>{{student.grade}}</th>
+                <th><button class="btn btn-primary" (click)="onedit(student.id)">Edit</button>
+                    <BUtton class="btn btn-danger" (click)="ondelete(student.id)">Delete</BUtton>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>

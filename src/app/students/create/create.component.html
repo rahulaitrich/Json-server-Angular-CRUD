@@ -1,0 +1,19 @@
+<div class="container">
+    <legend>Create Item</legend>
+    <form>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="name" [(ngModel)]="formdata.name" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" [(ngModel)]="formdata.age" name="age" class="form-control" id="age">
+        </div>
+        <div class="mb-3">
+            <label for="grade" class="form-label">Grade</label>
+            <input type="text" [(ngModel)]="formdata.grade" name="grade" class="form-control" id="grade">
+        </div>
+        <button type="button" (click)="create()" class="btn btn-primary">Create</button>
+        <button class="btn btn-dark" routerLink="/student/home">Cancel</button>
+    </form>
+</div>
